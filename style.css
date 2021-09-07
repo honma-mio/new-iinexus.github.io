@@ -93,6 +93,7 @@ header{
   background: linear-gradient(-135deg, #E7EF2D, #FFD36A); 
   position:relative;
   font-size: 15px;
+  font-weight: bold;
   letter-spacing: 2px;
   padding:18px;
   z-index: 2;
@@ -113,8 +114,8 @@ header{
   top: calc(50% - 2px);
   right: 1em;
   transform: translateY(calc(-50% - 2px)) rotate(30deg);
-  width: 12px;
-  height: 2px;
+  width: 10px;
+  height: 1px;
   background-color: #2285b1;
   transition: 0.3s;
 }
@@ -126,7 +127,7 @@ header{
   right: 1em;
   transform: translateY(-50%);
   width: 70px;
-  height: 2px;
+  height: 1px;
   background-color: #2285b1;
   transition: 0.3s;
 }
@@ -294,6 +295,7 @@ header{
   background-color: #fff;
   position:relative;
   font-size: 15px;
+  font-weight: bold;
   letter-spacing: 2px;
   padding:18px;
   z-index: 2;
@@ -315,8 +317,8 @@ header{
   top: calc(50% - 2px);
   right: 1em;
   transform: translateY(calc(-50% - 2px)) rotate(30deg);
-  width: 12px;
-  height: 2px;
+  width: 10px;
+  height: 1px;
   background-color: #2285b1;
   transition: 0.3s;
 }
@@ -328,7 +330,7 @@ header{
   right: 1em;
   transform: translateY(-50%);
   width: 70px;
-  height: 2px;
+  height: 1px;
   background-color: #2285b1;
   transition: 0.3s;
 }
@@ -345,6 +347,7 @@ header{
 
 .news_wrap_right_title{
   text-align: left;
+  line-height: 25px;
 }
 
 .news_wrap_right ul li{
@@ -456,7 +459,7 @@ header{
   font-size: 20px;
   line-height: 40px;
   color: rgb(0, 0, 0);
-  background-color: rgba(255, 255, 255, 0.884);
+  background-color: rgba(255, 255, 255, 0.9);
   width: 338px;
   height: 384px;
   border-radius: 30px;
