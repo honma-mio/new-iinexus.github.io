@@ -477,6 +477,7 @@ header{
 }
 
 .about_wrap_card_item img{
+  filter: brightness(70%);
   border-radius: 30px;
   position: absolute;
   top: 0px;
