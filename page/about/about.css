@@ -172,6 +172,7 @@ header{
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  gap: 75px;
 }
 
 .news_wrap_left{
@@ -200,10 +201,6 @@ header{
   -ms-transform: translateX(-50%);
   transform: translate(-50%); /*位置調整*/
   background: linear-gradient(-135deg, #E7EF2D, #FFD36A);/*下線の色*/
-}
-
-.news_wrap_right{
-  margin-left: 75px;
 }
 
 .news_wrap_right_title{
