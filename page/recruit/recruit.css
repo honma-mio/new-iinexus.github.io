@@ -102,6 +102,7 @@ header{
   padding-bottom: 78px;
 }
 
+
 .service_wrap{
   max-width: 1100px;
   margin: 0 auto;
@@ -112,32 +113,33 @@ header{
   font-size: 35px;
   font-weight: bold;
   letter-spacing: 2px;
+  line-height: 50px;
   color: #0092C3;
-  margin-bottom: 30px;
+  margin-bottom: 80px;
 }
-
-
 
 .service_wrap_card ul{
   display: flex;
-  gap: 42px;
-  justify-content: center;
+  gap: 60px;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .service_wrap_card ul li{
-  width: 520px;
-  height: 384px;
-  border-radius: 30px;
-  background-color: #fff;
-  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .service_wrap_card_img{
-  width: 520px;
-  height: 242px;
+  width: 348px;
+  height: 300px;
   overflow: hidden;
-  border-radius: 30px 30px 0 0;
+  border-radius: 30px;
+  background-color: #fff;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
 }
 
 .service_wrap_card_img img:hover{
@@ -145,35 +147,167 @@ header{
   transition:1s all;
 }
 
+.service_wrap_card_textarea{
+  text-align: left;
+}
+
 .service_wrap_card_textarea_title{
-  font-size: 20px;
+  font-size: 30px;
   letter-spacing: 2px;
   font-weight: bold;
-  margin-top: 36px;
-  margin-bottom: 37px;
+  margin-bottom: 27px;
   position: relative;
   color: #0092C3;
+}
+
+.service_wrap_card_textarea_subtitle{
+  font-size: 12px;
+  color: #666;
+  margin-bottom: 20px;
 }
 
 .service_wrap_card_textarea_title::before{
   content: '';
   position: absolute;
-  left: 50%;
-  bottom: -17px; /*下線の上下位置調整*/
+  bottom: -10px; /*下線の上下位置調整*/
   display: inline-block;
-  width: 66px; /*下線の幅*/
+  width: 118px; /*下線の幅*/
   height: 4px; /*下線の太さ*/
-  -moz-transform: translateX(-50%);
-  -webkit-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
-  transform: translate(-50%); /*位置調整*/
+  transform: translate(0%); /*位置調整*/
   background-color: #0092C3; /*下線の色*/
 }
 
 .service_wrap_card_textarea_text{
   font-size: 12px;
-  margin-top: 12px;
+  margin-top: 10px;
+  line-height: 30px;
+  margin-bottom: 20px;
 }
+
+/*button************************start*/
+.service_wrap_card_textarea_button a{
+  background-color: #fff;
+  position:relative;
+  font-size: 15px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  padding:18px;
+  z-index: 2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em 2em;
+  width: 264px;
+  height: 52px;
+  color: #0092C3;
+  transition: 0.3s;
+  border: 1px solid #0092C3;
+}
+
+.service_wrap_card_textarea_button a::before {
+  content: '';
+  position: absolute;
+  top: calc(50% - 2px);
+  right: 1em;
+  transform: translateY(calc(-50% - 2px)) rotate(30deg);
+  width: 10px;
+  height: 1px;
+  background-color: #2285b1;
+  transition: 0.3s;
+}
+
+.service_wrap_card_textarea_button a::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: 1em;
+  transform: translateY(-50%);
+  width: 70px;
+  height: 1px;
+  background-color: #2285b1;
+  transition: 0.3s;
+}
+
+.service_wrap_card_textarea_button a:hover::before,
+.service_wrap_card_textarea_button a:hover::after {
+  right: 0.5em;
+}
+/*button************************end*/
+
+/*question*************************************/
+.question{
+  width: 100%;
+  max-width: 1100px;
+  margin:0 auto;
+  display: flex;
+  justify-content: space-between;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 118px;
+  gap: 40px;
+}
+
+.question_button{
+  display: flex;
+  gap: 40px;
+}
+
+.question_button a{
+  background-color: #fff;
+  font-size: 15px;
+  font-weight: bold;
+  text-align: center;
+  letter-spacing: 2px;
+  z-index: 2;
+  padding: 1em 2em;
+  width: 200px;
+  height: 52px;
+  color: #0092C3;
+  border: 1px solid #0092C3;
+}
+
+
+.question_link a{
+  background-color: #fff;
+  position:relative;
+  font-size: 15px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  padding:18px;
+  z-index: 2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em 2em;
+  width: 430px;
+  height: 52px;
+  color: #0092C3;
+}
+
+.question_link a::before {
+  content: '';
+  position: absolute;
+  top: calc(50% - 2px);
+  right: 1em;
+  transform: translateY(calc(-50% - 2px)) rotate(30deg);
+  width: 10px;
+  height: 1px;
+  background-color: #2285b1;
+  transition: 0.3s;
+}
+
+.question_link a::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: 1em;
+  transform: translateY(-50%);
+  width: 200px;
+  height: 1px;
+  background-color: #2285b1;
+  transition: 0.3s;
+}
+
 
 /*footer*************************************/
 
