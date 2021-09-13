@@ -1,6 +1,9 @@
 @charset "UTF-8";
 
-body { font-family: "PT Sans"; }
+body {
+  font-family: 'Noto Sans JP', sans-serif;
+  font-family: 'Roboto', sans-serif;
+}
 
 /*header*************************************/
 header{

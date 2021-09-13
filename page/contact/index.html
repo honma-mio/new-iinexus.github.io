@@ -5,7 +5,7 @@
         <title>new-iinexus</title>
         <link rel="stylesheet" href="../../reset.css">
         <link rel="stylesheet" href="../page.css">
-        <link rel="stylesheet" href="news.css">
+        <link rel="stylesheet" href="contact.css">
         <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=M+PLUS+1p" rel="stylesheet">
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -36,64 +36,134 @@
         <div class="top">
             <div class="top_content">
                 <div class="top_wrap">
-                    <div class="top_wrap_title">ニュース</div>
-                    <div class="top_wrap_subtitle"><span>News</span></div>
+                    <div class="top_wrap_title">お問い合わせ</div>
+                    <div class="top_wrap_subtitle"><span>Contact</span></div>
                 </div>
             </div>
         </div>
 
 
-        <div class="news">
-            <div class="news_wrap">
-                <div class="news_wrap_title">News</div>
-                <div class="news_wrap_right">
-                    <ul>
-                        <li>
-                            <div class="news_wrap_right_date"><a href="#">2021.08</a></div>
-                            <a href="#"><div class="news_wrap_right_category">NOTICE</div></a>
-                            <div class="news_wrap_right_title"><a href="#">【採用】dodaにてエンジニア募集の掲載を開始</a></div>
-                        </li>
-                        <li>
-                            <div class="news_wrap_right_date"><a href="#">2021.02</a></div>
-                            <a href="#"><div class="news_wrap_right_category">NOTICE</div></a>
-                            <div class="news_wrap_right_title"><a href="#">資本金増資のお知らせ</a></div>
-                        </li>
-                        <li>
-                            <div class="news_wrap_right_date"><a href="#">2020.12</a></div>
-                            <a href="#"><div class="news_wrap_right_category">NOTICE</div></a>
-                            <div class="news_wrap_right_title"><a href="#">年末年始休業のお知らせ</a></div>
-                        </li>
-                        <li>
-                            <div class="news_wrap_right_date"><a href="#">2020.08</a></div>
-                            <a href="#"><div class="news_wrap_right_category">PR</div></a>
-                            <div class="news_wrap_right_title"><a href="#">企業xエンジニアマッチングサービス「イイマッチング」リリース</a></div>
-                        </li>
-                        <li>
-                            <div class="news_wrap_right_date"><a href="#">2020.03</a></div>
-                            <a href="#"><div class="news_wrap_right_category">NOTICE</div></a>
-                            <div class="news_wrap_right_title"><a href="#">【新型コロナウィルス対策】全社リモートワーク（在宅勤務）へ移行について</a></div>
-                        </li>
-                        <li>
-                            <div class="news_wrap_right_date"><a href="#">2020.03</a></div>
-                            <a href="#"><div class="news_wrap_right_category">NOTICE</div></a>
-                            <div class="news_wrap_right_title"><a href="#">【お知らせ】大阪支店開設について</a></div>
-                        </li>
-                        <li>
-                            <div class="news_wrap_right_date"><a href="#">2020.01</a></div>
-                            <a href="#"><div class="news_wrap_right_category">PR</div></a>
-                            <div class="news_wrap_right_title"><a href="#">【ゲーム】シューティングゲーム「とべ！アニマル！！」リリース</a></div>
-                        </li>
-                    </ul>
+        <div class="contact">
+            <div class="contact_wrap">
+                <div class="contact_wrap_title">以下フォームにお問い合わせ内容をご記入の上、送信してください。<br>
+                    確認後、担当者よりご連絡させていただきます。
                 </div>
-                <div class="news_wrap_pager">
-                    <ul class="news_wrap_pager_pagination">
-                        <li><a href="#" class="active"><span>1</span></a></li>
-                        <li><a href="#"><span>2</span></a></li>
-                        <li><a href="#"><span>3</span></a></li>
-                        <li><a href="#"><span>4</span></a></li>
-                        <li><a href="#"><span>5</span></a></li>
-                    </ul>
-                </div>
+                <form class="contact_wrap_form">
+                    <div class="form_item">
+                        <p class="form_item_title">
+                            お問い合わせ種別
+                            <div class="form_item_title_required">必須</div>
+                        </p>
+                        <div class="form_item_text">
+                            <select name="" class="form_item_input">
+                                <option value="">お選びください</option>
+                                <option value="iinexus">イイネクサスについて</option>
+                                <option value="survice">サービスについて</option>
+                                <option value="survice">研究開発について</option>
+                                <option value="survice">パートナー募集について</option>
+                                <option value="survice">採用情報について</option>
+                                <option value="survice">個人情報保護に関する相談</option>
+                                <option value="survice">その他</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form_item">
+                        <p class="form_item_title">
+                            会社名
+                            <div class="form_item_title_required">必須</div>
+                        </p>
+                        <div class="form_item_text">
+                            <input type="text" class="form_item_input">
+                            <p>例）株式会社イイネクサス</p>
+                        </div>
+                    </div>
+                    <div class="form_item">
+                        <p class="form_item_title">
+                            お名前
+                            <div class="form_item_title_required">必須</div>
+                        </p>
+                        <div class="form_item_text">
+                            <div class="form_item_text_boxwrap">
+                                <div class="form_item_text_box">
+                                    <input type="text" class="form_item_input">
+                                    <p>例）山田</p>
+                                </div>
+                                <div class="form_item_text_box">
+                                    <input type="text" class="form_item_input">
+                                    <p>例）花子</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form_item">
+                        <p class="form_item_title">
+                            フリガナ
+                            <div class="form_item_title_required">必須</div>
+                        </p>
+                        <div class="form_item_text">
+                            <div class="form_item_text_boxwrap">
+                                <div class="form_item_text_box">
+                                    <input type="text" class="form_item_input">
+                                    <p>例）ヤマダ</p>
+                                </div>
+                                <div class="form_item_text_box">
+                                    <input type="text" class="form_item_input">
+                                    <p>例）ハナコ</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form_item">
+                        <p class="form_item_title">
+                            メールアドレス
+                            <div class="form_item_title_required">必須</div>
+                        </p>
+                        <div class="form_item_text">
+                            <input type="mail" class="form_item_input">
+                            <p>例）example@example.com</p>
+                        </div>
+                    </div>
+                    <div class="form_item">
+                        <p class="form_item_title">
+                            電話番号
+                            <div class="form_item_title_required">必須</div>
+                        </p>
+                        <div class="form_item_text">
+                            <input type="phone" class="form_item_input">
+                            <p>例）012-345-6789</p>
+                        </div>
+                    </div>
+                    <div class="form_item">
+                       <p class="form_item_title">
+                          お問い合わせ内容
+                          <div class="form_item_title_required">必須</div>
+                       </p>
+                       <div class="form_item_text">
+                            <textarea class="form_item_textarea"></textarea>
+                       </div>
+                    </div>
+                    <div class="form_item">
+                        <p class="form_item_title">
+                            個人情報の取扱い
+                           <div class="form_item_title_required">必須</div>
+                        </p>
+                        <div class="form_item_text">
+                             <textarea class="form_item_textarea"></textarea>
+                             <p><input type="checkbox"> 同意</p>
+                        </div>
+                     </div>
+                     <div class="form_item">
+                        <p class="form_item_title">
+                            画像認証
+                            <div class="form_item_title_required">必須</div>
+                        </p>
+                        <div class="form_item_text">
+                            <input type="text" class="form_item_input">
+                            <p><a href="#">イメージ</a></p>
+                        </div>
+                    </div>
+                    <input type="submit" class="form_item_button" value="メッセージ送信">
+                </form>
             </div>
         </div>
 
