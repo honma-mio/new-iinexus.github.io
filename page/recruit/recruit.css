@@ -265,3 +265,118 @@
   background-color: #2285b1;
   transition: 0.3s;
 }
+
+/*about*************************************/
+.about{
+  background-color: #ECFAFF;
+  width: 100%;
+  padding-top: 67px;
+  padding-bottom: 78px;
+}
+
+.about_wrap{
+  max-width: 1100px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.about_wrap_title{
+  font-size: 72px;
+  font-weight: bold;
+  color: #0092C3;
+  display: inline-block;
+  position: relative;
+  margin-bottom: 70px;
+}
+
+.about_wrap_title::before{
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: -10px; /*下線の上下位置調整*/
+  display: inline-block;
+  width: 118px; /*下線の幅*/
+  height: 6px; /*下線の太さ*/
+  -moz-transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translate(-50%); /*位置調整*/
+  background: linear-gradient(-135deg, #E7EF2D, #FFD36A); /*下線の色*/
+}
+
+.about_wrap_card ul{
+  display: flex;
+  gap: 42px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+
+.about_wrap_card_item {
+  width: 338px;
+  height: 384px;
+  border-radius: 30px;
+	overflow:		hidden;
+	position:		relative;	/* 相対位置指定 */
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
+}
+
+.about_wrap_card_item .about_wrap_card_item_mask_caption {
+	font-size:		130%;
+	text-align: 		center;
+	padding-top:		80px;
+	color:			rgb(0, 0, 0);
+}
+
+.about_wrap_card_item .about_wrap_card_item_mask {
+	width:			100%;
+	height:			100%;
+	position:		absolute;	/* 絶対位置指定 */
+  padding: 70px 20px;
+  line-height: 30px;
+	top:			0;
+	left:			0;
+	opacity:		0;	/* マスクを表示しない */
+	background-color:	rgba(255, 255, 255, 0.7);	/* マスクは半透明 */
+	-webkit-transition:	all 0.2s ease;
+	transition:		all 0.2s ease;
+}
+
+.about_wrap_card_item:hover .about_wrap_card_item_mask {
+	opacity:		1;	/* マスクを表示する */
+}
+
+.about_wrap_card_item:hover .about_wrap_card_item_textarea{
+  opacity: 0.3;
+}
+
+.about_wrap_card_item_img{
+  filter: brightness(70%);
+}
+
+.about_wrap_card_item_textarea_title{
+  font-size: 20px;
+  letter-spacing: 2px;
+  font-weight: bold;
+  color: #0092C3;
+  background-color: #fff;
+  width: 276px;
+  height: 54px;
+  border-radius: 30px;
+  line-height: 55px;
+  position: absolute;
+  top: 25px;
+  left: 30px;
+  z-index: 3;
+}
+
+.about_wrap_card_item_textarea_text{
+  font-size: 60px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
