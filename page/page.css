@@ -15,7 +15,7 @@ header{
   position: fixed;
   top: 0;
   left: 0;
-  z-index:9999;
+  z-index:9996;
 }
 
 .header_wrap{
@@ -39,7 +39,96 @@ header{
   margin-left: 0;
 }
 
+/*ハンバーガーメニュー*/
 
+.input-hidden{
+	display: none;
+}
+	/* label */
+.hamburger-demo-switch{
+	cursor: pointer;
+	position: absolute;
+	right: 3%;
+	top: 5px; /* ハンバーガーアイコンの位置（上から） */
+	z-index: 9999;
+	width: 4em; /* アイコン（クリック可能領域）の幅 */
+	height: 4em; /* アイコン（クリック可能領域の）高さ */
+}
+/* メニュー展開時にハンバーガーアイコンを固定 */
+#hamburger-demo1:checked ~ .hamburger-demo-switch{
+	position: fixed;
+}
+/* ハンバーガーアイコン */
+.hamburger-switch-line1, .hamburger-switch-line1:before, .hamburger-switch-line1:after{
+	width: 25px;
+	height: 3px;
+	background: #0092C3;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transition: .3s;
+	content: "";
+}
+.hamburger-switch-line1{
+		transform: translate(-50%, -50%);
+}
+.hamburger-switch-line1:before{
+	transform: translate(-50%, -300%);
+}
+.hamburger-switch-line1:after{
+	transform: translate(-50%, 200%);
+}
+/* ハンバーガーアイコン･アニメーション */
+#hamburger-demo1:checked ~ .hamburger-demo-switch .hamburger-switch-line1{
+	width: 0;
+}
+#hamburger-demo1:checked ~ .hamburger-demo-switch .hamburger-switch-line1:before{
+	transform: rotate(45deg) translate(-40%, 325%);
+}
+#hamburger-demo1:checked ~ .hamburger-demo-switch .hamburger-switch-line1:after{
+	transform: rotate(-45deg) translate(-40%, -325%);
+}
+/* メニューエリア */
+.hamburger-demo-menuwrap{
+	position: fixed;
+	height: 100%;
+	background: #fff;
+	padding: 5em 3% 2em;
+	z-index: 9998;
+	transition: .3s;
+	top: 0;
+	left: 100%;
+	width: 70%;
+}
+
+.hamburger-demo-menulist li a{
+	color: #0092C3;
+  font-weight: bold;
+	display: block;
+	padding: 20px 0;
+}
+/* メニューエリア･アニメーション */
+	/* 右から */
+#hamburger-demo1:checked ~ .hamburger-demo-menuwrap{
+	left: 30%;
+}
+	/* コンテンツカバー */
+#hamburger-demo1:checked ~ .hamburger-demo-cover{
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	z-index: 9997;
+	background: rgba(3,3,3,.5);
+	display: block;
+}
+/* PCではハンバーガーメニューを表示しない */
+@media (min-width: 992px){
+	.hamburger-demo-menubox{
+		display: none;
+	}
+}
 
 /*footer*************************************/
 
@@ -130,4 +219,110 @@ footer{
   text-align: center;
   color: #fff;
   font-size: 12px;
+}
+
+/*PCサイズ以下の設定******************************************************/
+
+@media only screen and (max-width: 991px){
+    /*header*************************************/
+
+  .header_wrap_list{
+    display: none;
+  }
+
+  /*top*************************************/
+  
+  .top_content{
+    background-image: url(image/top_image.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 502px;
+    margin-top: 80px;
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+
+  .top_content::after {
+    content: '';
+    background-color: #0092c3d0;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+  }
+
+  .top_wrap{
+    max-width: 1100px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .top_wrap_title{
+    font-size: 20px;
+    line-height: 50px;
+  }
+
+  .top_backtext{
+    font-size: 160px;
+    font-weight: bold;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgba(255, 255, 255, 0.2);
+    z-index: 1;
+  }
+
+  /*news*************************************/
+  
+  .news_wrap_right ul li{
+    font-size: 12px;
+  }
+
+  .news_wrap_right_category{
+    width: 80px;
+    height: 20px;
+  }
+
+  /*footer*************************************/
+
+  .footer_wrap_top{
+    gap: 50px;
+    flex-wrap: wrap;
+  }
+
+  .footer_wrap_top_list{
+    width: 180px;
+  }
+
+  .footer_wrap_top_list_title{
+    font-size: 15px;
+  }
+
+  .footer_wrap_top_list_text ul li{
+    font-size: 12px;
+  }
+
+  .footer_wrap_top_list_sub{
+    margin-top: 70px;
+  }
+
+  .footer_wrap_top_list_sub p{
+    font-size: 15px;
+  }
+
+  .footer_wrap_bottom{
+    max-width: 1100px;
+    width: 100%;
+    margin-top: 44px;
+    margin-bottom: 44px;
+  }
+
+  .footer_wrap_bottom_list ul{
+    flex-wrap: wrap;
+    gap:20px;
+    font-size: 12px;
+  }
 }
