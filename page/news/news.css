@@ -120,6 +120,10 @@
   justify-content: center;
 }
 
+.news_wrap_right_title{
+  text-align: left;
+}
+
 .news_wrap_pager{
   margin-top: 63px;
 }

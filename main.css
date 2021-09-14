@@ -264,7 +264,6 @@ header{
 
 .news_wrap_left{
   width: 264px;
-  padding-bottom: 78px;
 }
 
 .news_wrap_left_title{
@@ -351,7 +350,6 @@ header{
   font-size: 16px;
   display: flex;
   align-items: center;
-  width: 761px;
   padding: 30px;
   border-bottom: 1px dashed #ddd;
 }
