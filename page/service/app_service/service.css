@@ -143,6 +143,17 @@
 }
 
 
+.service_wrap_card_textarea_text span{
+  border: 1px solid #0092C3;
+  color: #0092C3;
+  padding: 5px 20px;
+  margin-right: 10px;
+}
+
+.service_wrap_card_textarea_text span:last-child{
+  margin-right: 0;
+}
+
 /*OTHER_service*************************************/
 .OTHERservice{
   background-color: #ffffff;
