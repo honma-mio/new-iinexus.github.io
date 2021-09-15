@@ -193,6 +193,7 @@
   display: inline-block;
   position: relative;
   margin-bottom: 70px;
+  letter-spacing: 2px;
 }
 
 .service_wrap_title::before{
