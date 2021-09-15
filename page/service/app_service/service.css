@@ -85,7 +85,7 @@
   gap: 60px;
   flex-wrap: wrap;
   justify-content: center;
-  margin-bottom: 50px;
+  margin-bottom: 80px;
 }
 
 .service_wrap_card_img{
@@ -164,7 +164,7 @@
 }
 
 .service_wrap_jisseki_title {
-  margin-bottom: 27px;
+  margin-bottom: 30px;
   border-radius: 30px;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -175,6 +175,11 @@
   border: 1px solid #0092C3;
   font-weight: bold;
   font-size: 20px;
+}
+
+.service_wrap_jisseki img{
+  margin-bottom: 30px;
+  width: 80%;
 }
 
 
