@@ -81,7 +81,6 @@
 }
 
 .contact_wrap_form {
-  max-width: 720px;
   margin: 0 auto;
 }
 
@@ -90,11 +89,12 @@
   display: flex;
   align-items: top;
   text-align: left;
+  justify-content: center;
 }
 
 .form_item_title {
   width: 100%;
-  max-width: 160px;
+  max-width: 150px;
   padding-top: 5px;
   font-weight: bold;
   font-size: 16px;
@@ -104,7 +104,7 @@
 .form_item_title_required {
   width: 100px;
   height: 30px;
-  padding: 5px 0;
+  padding: 7px 0px;
   display: inline-block;
   text-align: center;
   background: #0092C3;
@@ -130,30 +130,30 @@
   display: flex;
 }
 
-.form_item_text_box .form_item_input{
-  width: 200px;
-}
-
 .form_item_input {
+  width: 400px;
   border: 1px solid #ddd;
   padding-left: 5px;
-  margin-left: 12px;
+  margin-left: 10px;
   height: 30px;
   font-size: 16px;
   color: #999;
   background: #fff;
-  width: 412px;
+}
+
+.form_item_text_box .form_item_input{
+  width: 195px;
 }
 
 .form_item_input_select{
   border: 1px solid #ddd;
   padding-left: 5px;
-  margin-left: 12px;
+  margin-left: 10px;
   height: 30px;
   font-size: 16px;
   color: #999;
   background: #fff;
-  width: 412px;
+  width: 400px;
   background-image: linear-gradient(45deg, transparent 50%, rgba(0,0,0,0.4) 50%),  linear-gradient(135deg, rgba(0,0,0,0.4) 50%, transparent 50%);
   background-size: 5px 5px, 5px 5px;
   background-position: calc(100% - 15px) 50%, calc(100% - 10px) 50%;
@@ -163,10 +163,10 @@
 
 .form_item_textarea {
   border: 1px solid #ddd;
-  margin-left: 12px;
+  margin-left: 10px;
   padding-left: 5px;
   height: 160px;
-  width: 412px;
+  width: 400px;
   background: #fff;
   font-size: 18px;
   color: #999;
@@ -289,4 +289,44 @@
 .service_wrap_card_textarea_text{
   font-size: 12px;
   margin-top: 12px;
+}
+
+/*PCサイズ以下の設定******************************************************/
+
+@media only screen and (max-width: 991px){
+  .contact_wrap,.contact_wrap_form{
+    max-width: 500px;
+  }
+  
+  .form_item_title_required{
+    width: 60px;
+    height: 25px;
+    padding: 5px 0px;
+  }
+
+  .form_item_title {
+    max-width: 120px;
+  }
+
+  .form_item_title,.form_item_title_required,.form_item_input_select,.form_item_input{
+    font-size: 14px;
+  }
+  
+  .form_item_input,.form_item_input_select,.form_item_textarea{
+    width: 250px;
+  }
+
+  .form_item_input,.form_item_input_select{
+    height: 25px;
+  }
+
+  .form_item_text_box .form_item_input{
+    width: 120px;
+    height: 25px;
+  }
+
+  .form_item_button {
+    width: 300px;
+    font-size: 20px;
+  }
 }
