@@ -85,6 +85,7 @@
   gap: 60px;
   flex-wrap: wrap;
   justify-content: center;
+  margin-bottom: 50px;
 }
 
 .service_wrap_card_img{
@@ -153,6 +154,30 @@
 .service_wrap_card_textarea_text span:last-child{
   margin-right: 0;
 }
+
+.service_wrap_jisseki{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 30px;
+  margin: 0 50px;
+}
+
+.service_wrap_jisseki_title {
+  margin-bottom: 27px;
+  border-radius: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 348px;
+  letter-spacing: 0.05em;
+  background: #ffffff;
+  color: #0092C3;
+  border: 1px solid #0092C3;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+
 
 /*OTHER_service*************************************/
 .OTHERservice{
