@@ -36,6 +36,7 @@
   font-size: 40px;
   font-weight: bold;
   letter-spacing: 10px;
+  text-indent: 10px;
   margin-bottom: 35px;
   position:relative;
   z-index: 3;
@@ -46,10 +47,8 @@
   font-size: 72px;
   font-weight: bold;
   letter-spacing: 2px;
+  text-indent: 2px;
   z-index: 2;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   background: linear-gradient(-135deg, #E7EF2D, #FFD36A);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
