@@ -79,7 +79,6 @@
   color: #0092C3;
   margin: 0 50px 80px 50px;
 }
-}
 
 .contact_wrap_form {
   margin: 0 auto;
@@ -99,18 +98,21 @@
   padding-top: 5px;
   font-weight: bold;
   font-size: 16px;
-  color: #0092C3;
+  color: #666;
 }
 
 .form_item_title_required {
-  width: 100px;
-  height: 30px;
-  padding: 7px 0px;
+  width: 50px;
+  height: 20px;
+  letter-spacing: 2px;
+  padding: 4px 0;
+  border-radius: 30px;
   display: inline-block;
   text-align: center;
   background: #0092C3;
   color: #fff;
-  font-size: 16px;
+  font-size: 12px;
+  margin-top: 3px;
 }
 
 .form_item_text p{
@@ -136,7 +138,7 @@
   border: 1px solid #ddd;
   padding-left: 5px;
   margin-left: 10px;
-  height: 30px;
+  height: 35px;
   font-size: 16px;
   color: #999;
   background: #fff;
@@ -150,7 +152,7 @@
   border: 1px solid #ddd;
   padding-left: 5px;
   margin-left: 10px;
-  height: 30px;
+  height: 35px;
   font-size: 16px;
   color: #999;
   background: #fff;
@@ -234,8 +236,6 @@
   background: linear-gradient(-135deg, #E7EF2D, #FFD36A); /*下線の色*/
 }
 
-
-
 .service_wrap_card ul{
   display: flex;
   gap: 42px;
@@ -256,6 +256,10 @@
   height: 242px;
   overflow: hidden;
   border-radius: 30px 30px 0 0;
+}
+
+.service_wrap_card_img img{
+  transition:1s all;
 }
 
 .service_wrap_card_img img:hover{
@@ -300,17 +304,12 @@
     max-width: 500px;
   }
   
-  .form_item_title_required{
-    width: 60px;
-    height: 25px;
-    padding: 5px 0px;
-  }
 
   .form_item_title {
     max-width: 120px;
   }
 
-  .form_item_title,.form_item_title_required,.form_item_input_select,.form_item_input{
+  .form_item_title,.form_item_input_select,.form_item_input{
     font-size: 14px;
   }
   
