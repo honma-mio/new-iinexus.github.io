@@ -5,6 +5,10 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
+a:hover {
+  opacity: 0.7;
+}
+
 /*header*************************************/
 header{
   background-color: rgba(255, 255, 255, 0.89);
@@ -20,15 +24,20 @@ header{
 
 .header_wrap{
   max-width: 1100px;
+  width: 100%;
   margin: 0 auto;
   display: flex;
   align-items: center;
+  justify-content: space-between;
+}
+
+.header_wrap_img{
+  padding-bottom: 5px;
 }
 
 .header_wrap_list ul{
   display: flex;
   font-size: 18px;
-  margin-left: 167px;
 }
 
 .header_wrap_list ul li{
@@ -110,7 +119,7 @@ header{
 /* メニューエリア･アニメーション */
 	/* 右から */
 #hamburger-demo1:checked ~ .hamburger-demo-menuwrap{
-	left: 30%;
+	left: 50%;
 }
 	/* コンテンツカバー */
 #hamburger-demo1:checked ~ .hamburger-demo-cover{
@@ -226,7 +235,7 @@ header{
 /*button************************end*/
 
 .top_backtext{
-  font-size: 195px;
+  font-size: 14vw;
   font-weight: bold;
   position: absolute;
   top: 50%;
@@ -296,6 +305,11 @@ header{
   overflow: hidden;
   border-radius: 30px 30px 0 0;
 }
+
+.service_wrap_card_img img{
+  transition:1s all;
+}
+
 
 .service_wrap_card_img img:hover{
   transform:scale(1.2,1.2);
@@ -451,8 +465,7 @@ header{
   margin-right: 26px;
 }
 
-.news_wrap_right_category{
-  background-color: #0092C3;
+.news_wrap_right_category_notice,.news_wrap_right_category_pr{
   width: 100px;
   height: 24px;
   color: #fff;
@@ -460,6 +473,14 @@ header{
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.news_wrap_right_category_notice{
+  background-color: #979c00;
+}
+
+.news_wrap_right_category_pr{
+  background-color: #d89700;
 }
 
 
@@ -662,6 +683,14 @@ footer{
   margin-bottom: 20px;
 }
 
+.footer_wrap_bottom_mark img{
+  margin-right: 15px;
+}
+
+.footer_wrap_bottom_mark img:last-child{
+  margin-right: 0;
+}
+
 
 .footer_wrap_bottom p{
   text-align: center;
@@ -671,11 +700,24 @@ footer{
 
 /*PCサイズ以下の設定******************************************************/
 
-@media only screen and (max-width: 991px){
+@media screen and (min-width:800px) and ( max-width:990px){
+  .header_wrap_list{
+    display: none;
+  }
+  #hamburger-demo1:checked ~ .hamburger-demo-menuwrap{
+    left: 70%;
+  }
+}
+
+@media screen and (max-width: 799px){
     /*header*************************************/
 
   .header_wrap_list{
     display: none;
+  }
+
+  .header_wrap_img{
+    margin-left: 30px;
   }
 
   /*top*************************************/
@@ -713,14 +755,7 @@ footer{
   }
 
   .top_backtext{
-    font-size: 160px;
-    font-weight: bold;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: rgba(255, 255, 255, 0.2);
-    z-index: 1;
+    font-size: 20vw;
   }
 
   /*news*************************************/
