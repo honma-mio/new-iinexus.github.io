@@ -1,5 +1,7 @@
 @charset "UTF-8";
 
+
+
 /*service*************************************/
 .service{
   background-color: #ffffff;
@@ -29,7 +31,6 @@
   gap: 60px;
   flex-wrap: wrap;
   justify-content: center;
-  margin-bottom: 80px;
 }
 
 .service_wrap_card_img{
@@ -66,6 +67,14 @@
 .service_wrap_card_textarea_subtitle{
   font-size: 12px;
   color: #666;
+  margin-bottom: 40px;
+}
+
+
+.service_wrap_card_textarea_subtitle2{
+  font-size: 18px;
+  font-weight: bold;
+  color: #666;
   margin-bottom: 20px;
 }
 
@@ -91,45 +100,54 @@
   margin-bottom: 0;
 }
 
-
-.service_wrap_card_textarea_text span{
-  border: 1px solid #0092C3;
-  color: #0092C3;
-  padding: 5px 20px;
-  margin-right: 10px;
-}
-
-.service_wrap_card_textarea_text span:last-child{
-  margin-right: 0;
-}
-
-.service_wrap_jisseki{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  line-height: 30px;
-  margin: 0 50px;
-}
-
-.service_wrap_jisseki_title {
-  margin-bottom: 30px;
-  border-radius: 30px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  width: 348px;
-  letter-spacing: 0.05em;
-  background: #ffffff;
-  color: #0092C3;
-  border: 1px solid #0092C3;
+/*button************************start*/
+.service_wrap_button a{
+  background: linear-gradient(-135deg, #E7EF2D, #FFD36A); 
+  position:relative;
+  font-size: 15px;
   font-weight: bold;
-  font-size: 20px;
+  letter-spacing: 2px;
+  padding:18px;
+  z-index: 2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em 2em;
+  width: 264px;
+  height: 52px;
+  color: #0092C3;
+  transition: 0.3s;
 }
 
-.service_wrap_jisseki img{
-  margin-bottom: 30px;
-  width: 80%;
+.service_wrap_button a::before {
+  content: '';
+  position: absolute;
+  top: calc(50% - 2px);
+  right: 1em;
+  transform: translateY(calc(-50% - 2px)) rotate(30deg);
+  width: 10px;
+  height: 1px;
+  background-color: #2285b1;
+  transition: 0.3s;
 }
 
+.service_wrap_button a::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: 1em;
+  transform: translateY(-50%);
+  width: 70px;
+  height: 1px;
+  background-color: #2285b1;
+  transition: 0.3s;
+}
+
+.service_wrap_button a:hover::before,
+.service_wrap_button a:hover::after {
+  right: 0.5em;
+}
+/*button************************end*/
 
 
 /*OTHER_service*************************************/
