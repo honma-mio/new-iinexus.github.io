@@ -188,7 +188,9 @@
 
 .advice_wrap_item ul{
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0 50px;
 }
 
 .advice_wrap_item_img{
