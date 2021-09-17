@@ -10,13 +10,13 @@
   padding-bottom: 78px;
 }
 
-.service_wrap{
+.service_wrap,.advice_wrap{
   max-width: 1100px;
   margin: 0 auto;
   text-align: center;
 }
 
-.service_wrap_title{
+.service_wrap_title,.advice_wrap_subtitle{
   font-size: 20px;
   font-weight: bold;
   letter-spacing: 2px;
@@ -31,6 +31,7 @@
   gap: 60px;
   flex-wrap: wrap;
   justify-content: center;
+  margin-bottom: 80px;
 }
 
 .service_wrap_card_img{
@@ -51,6 +52,7 @@
   transition:1s all;
 }
 
+
 .service_wrap_card_textarea{
   text-align: left;
 }
@@ -64,18 +66,10 @@
   color: #0092C3;
 }
 
-.service_wrap_card_textarea_subtitle{
+.service_wrap_card_textarea_subtitle,.advice_wrap_item_textarea_subtitle{
   font-size: 12px;
   color: #666;
   margin-bottom: 40px;
-}
-
-
-.service_wrap_card_textarea_subtitle2{
-  font-size: 18px;
-  font-weight: bold;
-  color: #666;
-  margin-bottom: 20px;
 }
 
 .service_wrap_card_textarea_title::before{
@@ -89,7 +83,7 @@
   background-color: #0092C3; /*下線の色*/
 }
 
-.service_wrap_card_textarea_text{
+.service_wrap_card_textarea_text,.advice_wrap_item_textarea_text{
   font-size: 12px;
   margin-top: 10px;
   line-height: 30px;
@@ -99,6 +93,12 @@
 .service_wrap_card_textarea_text:last-child{
   margin-bottom: 0;
 }
+
+.service_wrap_advice ul{
+  display: flex;
+  justify-content: space-between;
+}
+
 
 /*button************************start*/
 .service_wrap_button a{
@@ -148,6 +148,62 @@
   right: 0.5em;
 }
 /*button************************end*/
+
+
+/*advice*************************************/
+.advice_wrap_title {
+  margin: 0 auto 40px auto;
+  border-radius: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 348px;
+  letter-spacing: 0.05em;
+  background: #ffffff;
+  color: #0092C3;
+  border: 1px solid #0092C3;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.advice_wrap_item_textarea_title{
+  font-size: 15px;
+  letter-spacing: 1px;
+  font-weight: bold;
+  margin-bottom: 27px;
+  position: relative;
+  color: #0092C3;
+}
+
+.advice_wrap_item_textarea_title::before{
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: -13px; /*下線の上下位置調整*/
+  display: inline-block;
+  width: 118px; /*下線の幅*/
+  height: 2px; /*下線の太さ*/
+  transform: translate(-50%); /*位置調整*/
+  background-color: #0092C3; /*下線の色*/
+}
+
+.advice_wrap_item ul{
+  display: flex;
+  justify-content: space-between;
+}
+
+.advice_wrap_item_img{
+  margin-bottom: 20px;
+}
+
+.advice_wrap_item_img img{
+  width: 300px;
+}
+
+.advice_wrap_item_textarea_subtitle{
+  font-size: 12px;
+  color: #666;
+  margin-bottom: 20px;
+}
 
 
 /*OTHER_service*************************************/
