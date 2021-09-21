@@ -357,6 +357,7 @@ header {
 
 .service_4_in_wrap_card {
   align-items: center;
+  margin-bottom: 80px;
 }
 
 .top_service_wrap_card ul li,.service_4_wrap_card ul li {
@@ -493,6 +494,44 @@ header {
 .service_4_in_wrap_card_textarea_text {margin-bottom: 50px;}
 
 .service_4_in_wrap_card_textarea_text:last-child {margin-bottom: 0;}
+
+.service_4_in_wrap_card_textarea_text span {
+  border: 1px solid #0092C3;
+  color: #0092C3;
+  padding: 5px 20px;
+  margin-right: 10px;
+}
+
+.service_4_in_wrap_card_textarea_text span:last-child {
+  margin-right: 0;
+}
+
+.service_4_in_wrap_jisseki{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 30px;
+  margin: 0 50px;
+}
+
+.service_4_in_wrap_jisseki_title{
+  margin-bottom: 30px;
+  border-radius: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 348px;
+  letter-spacing: 0.05em;
+  background: #ffffff;
+  color: #0092C3;
+  border: 1px solid #0092C3;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.service_4_in_wrap_jisseki img{
+  margin-bottom: 30px;
+  width: 80%;
+}
 
 /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 /*recruit question**********************************/
