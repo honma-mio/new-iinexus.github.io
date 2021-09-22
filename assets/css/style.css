@@ -197,7 +197,7 @@ header {
 }
 
 /*?button************************start*/
-.top_top_wrap_button a {
+.top_top_wrap_button a,.recruit_button a {
   background: linear-gradient(-135deg, #E7EF2D, #FFD36A); 
   position: relative;
   font-size: 15px;
@@ -208,7 +208,6 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 0 auto;
   padding: 1em 2em;
   width: 264px;
   height: 52px;
@@ -216,7 +215,9 @@ header {
   transition: 0.3s;
 }
 
-.top_top_wrap_button a::before {
+.top_top_wrap_button a {margin: 0 auto;}
+
+.top_top_wrap_button a:before,.recruit_button a:before {
   content: '';
   position: absolute;
   top: calc(50% - 2px);
@@ -228,7 +229,7 @@ header {
   transition: 0.3s;
 }
 
-.top_top_wrap_button a::after {
+.top_top_wrap_button a:after,.recruit_button a:after {
   content: '';
   position: absolute;
   top: 50%;
@@ -240,8 +241,9 @@ header {
   transition: 0.3s;
 }
 
-.top_top_wrap_button a:hover::before,
-.top_top_wrap_button a:hover::after {
+.top_top_wrap_button a:hover:before,
+.top_top_wrap_button a:hover:after,
+.recruit_button a:hover:before,.recruit_button a:hover:after {
   right: 0.5em;
 }
 /*?button************************end*/
@@ -258,13 +260,13 @@ header {
 .service_4,.recruit {background-color: #ffffff;}
 
 .top_service_wrap,.rinen_wrap,.contact_wrap,
-.service_4_wrap,.recruit_wrap {
+.service_4_wrap,.recruit_wrap,.advice_wrap {
   max-width: 1100px;
   margin: 0 auto;
   text-align: center;
 }
 
-.top_service_wrap_title,.rinen_wrap_title,
+.top_service_wrap_title,.rinen_wrap_title,.advice_wrap_subtitle,
 .service_4_wrap_title,.recruit_wrap_title,.service_4_in_wrap_title {
   font-weight: bold;
   color: #0092C3;
@@ -282,7 +284,7 @@ header {
 }
 
 .top_service_wrap_title,.service_4_wrap_title,.recruit_wrap_title,
-.service_4_in_wrap_title {
+.service_4_in_wrap_title,.advice_wrap_subtitle {
   letter-spacing: 2px;
 }
 
@@ -291,18 +293,23 @@ header {
   letter-spacing: 10px;
 }
 
-.recruit_wrap_title,.service_4_in_wrap_title{
+.recruit_wrap_title,.service_4_in_wrap_title,.advice_wrap_subtitle {
   margin: 0 50px 80px 50px;
 }
 
-.recruit_wrap_title{
+.recruit_wrap_title {
   font-size: 35px;
   line-height: 50px;
 }
 
-.service_4_in_wrap_title{
+.service_4_in_wrap_title,.advice_wrap_subtitle {
   font-size: 20px;
   line-height: 40px;
+}
+
+.service_4_in_wrap_text{
+  line-height: 40px;
+  margin: 0 50px 50px 50px;
 }
 
 .top_service_wrap_title:before,.rinen_wrap_title:before,
@@ -370,13 +377,18 @@ header {
 
 .service_4_wrap_card ul li {width: 520px;}
 
-.recruit_wrap_card ul li{
+.recruit_wrap_card ul li,.advice_wrap_item ul {
   display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.recruit_wrap_card ul li{
   align-items: center;
   gap: 60px;
-  flex-wrap: wrap;
-  justify-content: center;
 }
+
+.advice_wrap_item ul {gap: 0 50px;}
 
 .top_service_wrap_card_img,.service_4_wrap_card_img {
   width: 338px;
@@ -400,6 +412,10 @@ header {
   height: 242px;
 }
 
+.advice_wrap_item_img img {width: 300px;}
+
+.advice_wrap_item_img {margin-bottom: 20px;}
+
 .top_service_wrap_card_img img,.service_4_wrap_card_img img,
 .recruit_wrap_card_img img,.service_4_in_wrap_card_img img 
 {transition:1s all;}
@@ -415,7 +431,8 @@ header {
 }
 
 .top_service_wrap_card_textarea_title,.service_4_wrap_card_textarea_title,
-.recruit_wrap_card_textarea_title,.service_4_in_wrap_card_textarea_title {
+.recruit_wrap_card_textarea_title,.service_4_in_wrap_card_textarea_title,
+.advice_wrap_item_textarea_title {
   letter-spacing: 2px;
   font-weight: bold;
   position: relative;
@@ -427,10 +444,13 @@ header {
   margin-bottom: 37px;
 }
 
-.recruit_wrap_card_textarea_title,.service_4_in_wrap_card_textarea_title {
-  font-size: 30px;
-  margin-bottom: 27px;
-}
+.recruit_wrap_card_textarea_title,.service_4_in_wrap_card_textarea_title,
+.advice_wrap_item_textarea_title {margin-bottom: 27px;}
+
+.recruit_wrap_card_textarea_title,
+.service_4_in_wrap_card_textarea_title {font-size: 30px;}
+
+.advice_wrap_item_textarea_title {font-size: 15px;}
 
 .top_service_wrap_card_textarea_title {margin-top: 23px;}
 
@@ -439,7 +459,7 @@ header {
 .top_service_wrap_card_textarea_title:before,
 .service_4_wrap_card_textarea_title:before,
 .recruit_wrap_card_textarea_title:before,
-.service_4_in_wrap_card_textarea_title:before {
+.service_4_in_wrap_card_textarea_title:before{
   content: '';
   position: absolute;
   display: inline-block;
@@ -465,17 +485,28 @@ header {
   transform: translate(0%); /*位置調整*/
 }
 
+.advice_wrap_item_textarea_title:before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: -13px; /*下線の上下位置調整*/
+  display: inline-block;
+  width: 118px; /*下線の幅*/
+  height: 2px; /*下線の太さ*/
+  transform: translate(-50%); /*位置調整*/
+  background-color: #0092C3; /*下線の色*/
+}
 
-.recruit_wrap_card_textarea_subtitle,.service_4_in_wrap_card_textarea_subtitle {
+.recruit_wrap_card_textarea_subtitle,
+.service_4_in_wrap_card_textarea_subtitle,.advice_wrap_item_textarea_subtitle {
   font-size: 12px;
   color: #666;
   margin-bottom: 20px;
 }
 
 .top_service_wrap_card_textarea_text,.service_4_wrap_card_textarea_text,
-.recruit_wrap_card_textarea_text,.service_4_in_wrap_card_textarea_text {
-  font-size: 12px;
-}
+.recruit_wrap_card_textarea_text,.service_4_in_wrap_card_textarea_text,
+.advice_wrap_item_textarea_text {font-size: 12px;}
 
 .top_service_wrap_card_textarea_text {
   margin: 0 24px;
@@ -484,14 +515,15 @@ header {
 
 .service_4_wrap_card_textarea_text {margin-top: 12px;}
 
-.recruit_wrap_card_textarea_text,.service_4_in_wrap_card_textarea_text{
+.recruit_wrap_card_textarea_text,.service_4_in_wrap_card_textarea_text,
+.advice_wrap_item_textarea_text {
   margin-top: 10px;
   line-height: 30px;
 }
 
 .recruit_wrap_card_textarea_text {margin-bottom: 20px;}
 
-.service_4_in_wrap_card_textarea_text {margin-bottom: 50px;}
+.service_4_in_wrap_card_textarea_text,.advice_wrap_item_textarea_text {margin-bottom: 50px;}
 
 .service_4_in_wrap_card_textarea_text:last-child {margin-bottom: 0;}
 
@@ -502,11 +534,9 @@ header {
   margin-right: 10px;
 }
 
-.service_4_in_wrap_card_textarea_text span:last-child {
-  margin-right: 0;
-}
+.service_4_in_wrap_card_textarea_text span:last-child {margin-right: 0;}
 
-.service_4_in_wrap_jisseki{
+.service_4_in_wrap_jisseki {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -514,8 +544,7 @@ header {
   margin: 0 50px;
 }
 
-.service_4_in_wrap_jisseki_title{
-  margin-bottom: 30px;
+.service_4_in_wrap_jisseki_title,.advice_wrap_title {
   border-radius: 30px;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -528,17 +557,21 @@ header {
   font-size: 20px;
 }
 
-.service_4_in_wrap_jisseki img{
+.service_4_in_wrap_jisseki_title {margin-bottom: 30px;}
+
+.advice_wrap_title {margin: 0 auto 40px auto;}
+
+.service_4_in_wrap_jisseki img {
   margin-bottom: 30px;
   width: 80%;
 }
 
 /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 /*recruit question**********************************/
-.question{
+.question {
   width: 100%;
   max-width: 1100px;
-  margin:0 auto;
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
   justify-content: center;
@@ -547,12 +580,12 @@ header {
   gap: 40px;
 }
 
-.question_button{
+.question_button {
   display: flex;
   gap: 40px;
 }
 
-.question_button a{
+.question_button a {
   background-color: #fff;
   font-size: 15px;
   font-weight: bold;
@@ -566,9 +599,9 @@ header {
   justify-content: center;
 }
 
-.question_link a{
+.question_link a {
   background-color: #fff;
-  position:relative;
+  position: relative;
   font-size: 15px;
   font-weight: bold;
   letter-spacing: 4px;
