@@ -388,7 +388,11 @@ header {
   gap: 60px;
 }
 
-.advice_wrap_item {margin-bottom: 50px;}
+.advice_wrap_item {
+  margin-bottom: 50px;
+  text-align: center;
+
+}
 
 .advice_wrap_item ul {gap: 0 50px;}
 
@@ -664,6 +668,17 @@ header {
 .sankaku-jisseki-text {
   color: #0092C3;
   margin-top: 10px;
+}
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+/*Employee introduction**********************************/
+.introduction_card_item {
+  width: 338px;
+  height: 384px;
+  border-radius: 30px;
+	overflow: hidden;
+	position: relative;	/* 相対位置指定 */
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 50px;
 }
 
 /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
