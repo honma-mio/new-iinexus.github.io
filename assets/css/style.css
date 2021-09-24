@@ -419,6 +419,11 @@ header {
   margin-bottom: 20px;
 }
 
+.ses_img img {
+  width: 100%;
+  margin-top: 30px;
+}
+
 .freelance_card_img img {width: 400px;}
 
 .advice_wrap_item_img {margin-bottom: 20px;}
