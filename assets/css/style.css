@@ -388,6 +388,8 @@ header {
   gap: 60px;
 }
 
+.advice_wrap_item {margin-bottom: 50px;}
+
 .advice_wrap_item ul {gap: 0 50px;}
 
 .top_service_wrap_card_img,.service_4_wrap_card_img {
@@ -412,7 +414,10 @@ header {
   height: 242px;
 }
 
-.advice_wrap_item_img img {width: 300px;}
+.advice_wrap_item_img img {
+  width: 300px;
+  margin-bottom: 20px;
+}
 
 .freelance_card_img img {width: 400px;}
 
@@ -637,6 +642,23 @@ header {
   height: 1px;
   background-color: #2285b1;
   transition: 0.3s;
+}
+
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+/*sankaku-jisseki**********************************/
+.sankaku-jisseki-wrap{
+  margin-bottom: 80px;
+}
+
+.sankaku-jisseki {
+  border: 1px dashed #0092C3;
+  margin-bottom: 20px;
+  padding: 20px;
+}
+
+.sankaku-jisseki-text {
+  color: #0092C3;
+  margin-top: 10px;
 }
 
 /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
