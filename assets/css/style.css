@@ -539,6 +539,11 @@ header {
   line-height: 30px;
 }
 
+.advice_wrap_item_textarea_text span,.about_iinexus_wrap_right_text span{
+  color: #0092C3;
+  padding-right: 5px;
+}
+
 .recruit_wrap_card_textarea_text {margin-bottom: 20px;}
 
 .service_4_in_wrap_card_textarea_text,.advice_wrap_item_textarea_text {margin-bottom: 50px;}
@@ -978,7 +983,7 @@ header {
 
 /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 /*about**about_iinexus***********************************/
-.about,.about_iinexus {
+.about,.about_iinexus{
   background-color: #ECFAFF;
   width: 100%;
   padding-top: 67px;
@@ -1026,6 +1031,12 @@ header {
   color: #666;
   line-height: 30px;
   width: calc(100% - 160px);
+}
+
+.about_iinexus_wrap_right_subtext{
+  font-size: 12px;
+  line-height: 20px;
+  color: #b8b8b8;
 }
 
 .about_iinexus iframe,.service_4 iframe {
