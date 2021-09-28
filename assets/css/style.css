@@ -761,15 +761,22 @@ header {
 
 /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 /*recruit Q&A**********************************/
-/* チェックボックスは非表示 */
-.accordion-hidden{
-  display: none;
+
+.accordion {margin-bottom: 50px;}
+
+.accordion-close span {
+  color: #0092C3;
+  font-weight: bold;
 }
+
+
+/* チェックボックスは非表示 */
+.accordion-hidden {display: none;}
 
 /* Question部分 */
 .accordion-open {
   display: block;
-  padding: 10px;
+  padding: 20px;
   color: #0092C3;
   cursor: pointer;
   margin: 5px 0;
@@ -779,8 +786,8 @@ header {
 }
 
 /* 開閉状態を示すアイコン+の作成 */
-.accordion-open::before,
-.accordion-open::after {
+.accordion-open:before,
+.accordion-open:after {
   content: '';
   width: 20px;
   height: 3px;
@@ -792,7 +799,7 @@ header {
 }
 
 /* 一本は縦にして+を作る */
-.accordion-open::after {
+.accordion-open:after {
   transform: translateY(-50%) rotate(90deg);
   transition: .5s;
 }
@@ -804,8 +811,8 @@ header {
 
 /* Answer部分 */
 .accordion-close {
-  color: #fff;
-  background-color: #0092C3;
+  color: #666;
+  background-color: #fff;
   display: block;
   height: 0;
   overflow: hidden;
@@ -818,8 +825,8 @@ header {
 .accordion-hidden:checked + .accordion-open + .accordion-close {
   height: auto;
   opacity: 1;
-  padding: 10px;
-  font-weight: 700;
+  padding: 30px;
+  line-height: 30px;
 }
 /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 /*sankaku-jisseki**********************************/
