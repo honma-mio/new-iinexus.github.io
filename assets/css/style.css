@@ -1340,6 +1340,23 @@ header {
   color: #fff;
 }
 
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+/*ant_social***********************************/
+
+.ant_social_title{
+  font-weight: bold;
+  padding:0 30px 10px 30px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #ccc;
+  display: inline-block;
+}
+
+.ant_social_title_text{
+  font-size: 12px;
+  line-height: 20px;
+  margin-bottom: 40px;
+}
+
 /*?footer*************************************/
 footer {
   background-color: #0092C3;
