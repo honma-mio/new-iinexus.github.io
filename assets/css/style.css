@@ -349,7 +349,7 @@ header {
 }
 
 .top_service_wrap_card ul,.service_4_wrap_card ul,.recruit_wrap_card ul,
-.service_4_in_wrap_card {
+.service_4_in_wrap_card,.schedule_wrap_card ul {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -359,7 +359,7 @@ header {
   gap: 42px;
 }
 
-.recruit_wrap_card ul,.service_4_in_wrap_card {
+.recruit_wrap_card ul,.schedule_wrap_card ul,.service_4_in_wrap_card {
   gap: 60px;
 }
 
@@ -367,6 +367,7 @@ header {
   align-items: center;
   margin-bottom: 80px;
 }
+
 
 .top_service_wrap_card ul li,.service_4_wrap_card ul li {
   width: 338px;
@@ -378,13 +379,13 @@ header {
 
 .service_4_wrap_card ul li {width: 520px;}
 
-.recruit_wrap_card ul li,.advice_wrap_item ul,.employee_wrap_item ul {
+.recruit_wrap_card ul li,.schedule_wrap_card ul li,.advice_wrap_item ul,.employee_wrap_item ul {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
 }
 
-.recruit_wrap_card ul li{
+.recruit_wrap_card ul li,.schedule_wrap_card ul li{
   align-items: center;
   gap: 60px;
 }
@@ -423,6 +424,11 @@ header {
 .advice_wrap_item_img img {
   width: 300px;
   margin-bottom: 20px;
+}
+
+.new-graduate_img img {
+  width: 100%;
+  margin-bottom: 40px;
 }
 
 .ses_img img {
@@ -1343,7 +1349,7 @@ header {
 /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 /*ant_social***********************************/
 
-.ant_social_title{
+.ant_social_title,.schedule_wrap_title{
   font-weight: bold;
   padding:0 30px 10px 30px;
   margin-bottom: 10px;
@@ -1351,10 +1357,14 @@ header {
   display: inline-block;
 }
 
-.ant_social_title_text{
+.ant_social_title_text,.schedule_wrap_title_text{
   font-size: 12px;
   line-height: 20px;
   margin-bottom: 40px;
+}
+
+.schedule_wrap_item{
+  margin-top: 50px;
 }
 
 /*?footer*************************************/
