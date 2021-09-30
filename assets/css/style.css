@@ -1349,7 +1349,7 @@ header {
 /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 /*ant_social***********************************/
 
-.ant_social_title,.schedule_wrap_title{
+.ant_social_title,.schedule_wrap_title {
   font-weight: bold;
   padding:0 30px 10px 30px;
   margin-bottom: 10px;
@@ -1357,14 +1357,60 @@ header {
   display: inline-block;
 }
 
-.ant_social_title_text,.schedule_wrap_title_text{
+.ant_social_title_text,.schedule_wrap_title_text {
   font-size: 12px;
   line-height: 20px;
   margin-bottom: 40px;
 }
 
-.schedule_wrap_item{
-  margin-top: 50px;
+.schedule_wrap_item {margin-top: 50px;}
+
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+/*privacy_policy***********************************/
+.privacy_title{
+  color: #0092C3;
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 50px;
+  line-height: 30px;
+}
+
+.privacy_wrap {margin-bottom: 20px;}
+
+.privacy_wrap_title {
+  border: 1px solid #0092C3;
+  color: #0092C3;
+  padding: 20px 0;
+  margin-bottom: 10px;
+}
+
+.privacy_wrap_item {
+  display: flex;
+  flex-wrap: wrap;
+  border-bottom: 1px dotted #ccc;
+  padding: 20px;
+  text-align: left;
+  align-items: center;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.privacy_wrap_subtitle {
+  font-size: 14px;
+  color: #0092C3;
+  width: 300px;
+}
+
+.privacy_wrap_subtitle span{
+  font-size: 10px;
+  padding-left: 10px;
+}
+
+.privacy_wrap_text {
+  font-size: 14px;
+  color: #666;
+  width: 500px;
+  line-height: 20px;
 }
 
 /*?footer*************************************/
