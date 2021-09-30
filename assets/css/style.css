@@ -31,14 +31,58 @@ header {
 
 .header_wrap_img {padding-bottom: 5px;}
 
-.header_wrap_list ul {
+
+.menu {
   display: flex;
   font-size: 18px;
+  width: 100%;
 }
 
-.header_wrap_list ul li {margin-left: 50px;}
+.menu__parent{
+  margin-left: 50px;
+}
 
 .header_wrap_list ul li:first-child {margin-left: 0;}
+
+.menu__child {
+  visibility: hidden;
+  opacity: 0;
+}
+.menu__child a {
+  color:#000;
+  margin-bottom: 20px;
+}
+.menu__parent {
+  position: relative;
+}
+
+.menu__child {
+  position: absolute;
+  top: 30px;
+  width: 200%;
+  left: 50%;
+  transform: translate(-50%,0);
+  transition-duration:.7s;
+  font-size: 12px;
+  line-height: 30px;
+  text-align: center;
+}
+
+.menu__child li{
+  background-color: rgba(255, 255, 255, 0.89);
+  border-bottom: 1px solid #0092C3;
+}
+
+.menu__child li:hover{
+  background-color: #f4f4f4;
+}
+
+.menu__parent:hover .menu__child {
+  top: 50px;
+  visibility: visible;
+  opacity: 1;
+  transition-duration:.7s;
+}
 
 /*?ハンバーガーメニュー**************************************/
 
