@@ -473,6 +473,7 @@ header {
 .new-graduate_img img {
   width: 100%;
   margin-bottom: 40px;
+  border-radius: 30px;
 }
 
 .ses_img img {
