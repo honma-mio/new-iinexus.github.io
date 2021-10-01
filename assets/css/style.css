@@ -292,7 +292,7 @@ header {
 }
 /*?button************************end*/
 /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-/*top_service**rinen**service_4**recruit*******************************/
+/*top_service**rinen**service_4**recruit**********************/
 .top_service,.rinen,.contact,.service_4,.recruit,.employee {
   width: 100%;
   padding-top: 67px;
@@ -642,6 +642,38 @@ header {
   margin-bottom: 30px;
   width: 80%;
 }
+
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+/*game_service****************************/
+.service_game_image img,.service_game_subtitle {margin-bottom: 20px;}
+
+.service_game_title {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.service_game_subtitle,.service_game_text_wrap_text span {color: #0092C3;}
+
+.service_game_subimage,.service_game_text_wrap {margin-bottom: 50px;}
+
+.service_game_subimage img {margin-bottom: 3px;}
+
+.service_game_text_wrap_title {
+  font-size: 25px;
+  color: #0092C3;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.service_game {
+  display: flex;
+  justify-content: center;
+  gap: 0 10px;
+  margin-bottom: 50px;
+}
+
+.service_game_text_wrap_text {line-height: 30px;}
+
 
 /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 /*office**********************************/
